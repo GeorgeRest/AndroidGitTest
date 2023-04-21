@@ -14,9 +14,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent();
+        Intent intent = new Intent(this,SecondActivity.class);
         intent.putExtra("second","secondActivity");
         startActivity(intent);
+        System.out.println("---------------");
         System.out.println("这里是sunny第一次修改");
         Button bt1 = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("这里是sunny第二次修改");
             }
         });
+
+
+        System.out.println("-------------------------zyy");
 
     }
 }
