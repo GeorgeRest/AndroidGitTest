@@ -20,5 +20,6 @@ public class MainActivity extends AppCompatActivity {
     public void click(View view) {
         Intent intent = new Intent(MainActivity.this,NewsActivity.class);
         startActivity(intent);
+        System.out.println("---------------");
     }
 }
