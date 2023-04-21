@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.putExtra("second","secondActivity");
         startActivity(intent);
+        System.out.println("---------------");
         System.out.println("这里是sunny第一次修改");
         Button bt1 = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
